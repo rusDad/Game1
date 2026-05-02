@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top-Down PvP Shooter</title>
+  <style>
+    body { margin:0; background:#111; color:#fff; font-family:Arial,sans-serif; display:flex; justify-content:center; }
+    #game-wrap { position:relative; margin:8px auto; width:1200px; }
+    canvas { image-rendering: pixelated; image-rendering: crisp-edges; border:1px solid #333; }
+    .hud { position:absolute; top:8px; font-weight:700; text-shadow:1px 1px 0 #000; z-index:2; }
+    #hud-p1 { left:8px; }
+    #hud-p2 { right:8px; text-align:right; }
+    #hud-center { position:absolute; top:8px; left:50%; transform:translateX(-50%); }
+  </style>
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game-canvas" width="1200" height="768"></canvas>
+    <div id="hud-p1" class="hud"></div>
+    <div id="hud-p2" class="hud"></div>
+    <div id="hud-center" class="hud"></div>
+  </div>
+  <script src="src/config.js"></script>
+  <script src="src/level_01.js"></script>
+  <script src="src/input.js"></script>
+  <script src="src/assets.js"></script>
+  <script src="src/collision.js"></script>
+  <script src="src/weapons.js"></script>
+  <script src="src/pickups.js"></script>
+  <script src="src/renderer.js"></script>
+  <script src="src/ui.js"></script>
+  <script src="src/game.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

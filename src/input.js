@@ -1,0 +1,1 @@
+window.Input=(function(){const s={};const block=new Set(['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight']);function kd(e){if(block.has(e.code))e.preventDefault();s[e.code]=true;}function ku(e){if(block.has(e.code))e.preventDefault();s[e.code]=false;}window.addEventListener('keydown',kd);window.addEventListener('keyup',ku);return{isDown:(c)=>!!s[c],state:s};})();

@@ -1,0 +1,1 @@
+window.UI=(function(){const p1=document.getElementById('hud-p1'),p2=document.getElementById('hud-p2'),c=document.getElementById('hud-center');function render(game){const a=game.players[0],b=game.players[1];p1.textContent=`P1 HP: ${a.health} | Wins: ${a.wins}`;p2.textContent=`P2 HP: ${b.health} | Wins: ${b.wins}`;c.textContent=game.paused?'PAUSED':'';}return{render};})();
